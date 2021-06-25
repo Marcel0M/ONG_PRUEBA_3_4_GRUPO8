@@ -14,7 +14,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="vendor/jquery/dist/jquery.min.js"></script>
         <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-        <script src="js/validacion-inicio-sesion.js"></script>
+        <script src="{% static 'js/validacion-inicio-sesion.js' %}"></script>
     </head>
     <body>
         <div class="container bg-light d-flex flex-column sticky-footer-wrapper min-vh-100">
@@ -134,7 +134,7 @@
                 <!-- Links -->
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="/">Inicio</a>
                     </li>
 
                     <!-- Dropdown -->
@@ -143,14 +143,14 @@
                             Mascotas
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="seccion-perros.html">Perros</a>
-                            <a class="dropdown-item" href="seccion-gatos.html">Gatos</a>
+                            <a class="dropdown-item" href="/seccion_perros">Perros</a>
+                            <a class="dropdown-item" href="/seccion_gatos">Gatos</a>
                         </div>
                     </li>
 
                     <li class="nav-item">
                         
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="/contacto">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -187,12 +187,12 @@
                 </div>  
                 <div class="row">
                     <div class="col-6 text-center">
-                        <a href="seccion-perros.html" title="Perros">
+                        <a href="/seccion_perros" title="Perros">
                             <img src="{% static 'core/img/seccion-perros.jpg' %}" title="Perros" alt="Perros" class="rounded-circle img-thumbnail" width="250"  />
                         </a>
                     </div>
                     <div class="col-6 text-center">
-                        <a href="seccion-gatos.html" title="Gatos">
+                        <a href="/seccion_gatos" title="Gatos">
                             <img src="{% static 'core/img/seccion-gatos.jpeg' %}" title="Gatos" alt="Gatos"  class="rounded-circle img-thumbnail" width="250"/>
                         </a>
                     </div>
